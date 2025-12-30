@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Forest - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Your Dashboard</h2>
+            <p>Welcome back, <span id="userName">...</span></p>
+            
+            <div id="statsDisplay" style="text-align: left; margin-bottom: 20px;">
+                <p><strong>Age:</strong> <span id="dispAge">-</span></p>
+                <p><strong>Height:</strong> <span id="dispHeight">-</span> cm</p>
+                <p><strong>Weight:</strong> <span id="dispWeight">-</span> kg</p>
+                <p><strong>Gender:</strong> <span id="dispGender">-</span></p>
+            </div>
+
+            <button id="logoutBtn" style="background-color: #c62828;">Log Out</button>
+        </div>
+    </div>
+    <script type="module" src="dashboard.js"></script>
+</body>
+</html>

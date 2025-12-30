@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriScan | Calorie Finder</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Nutri<span>Scan</span></div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Diary</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Track Every Bite.</h1>
+            <p>Search over 500,000 foods instantly.</p>
+            
+            <div class="search-container">
+                <input type="text" id="foodInput" placeholder="Try 'Grilled Chicken'...">
+                <button type="button" id="searchBtn">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="results-container">
+       <div class="result-card">
+            <div class="result-header">
+                <div class="food-info-main">
+                    <h2 id="foodName">Food Name</h2>
+                    <div class="weight-selector">
+                        <input type="number" id="foodWeight" value="100">
+                        <span>grams (g)</span>
+                    </div>
+                </div>
+                <div class="total-calories">
+                    <div id="calories">0</div>
+                    <span>kcal</span>
+                </div>
+            </div>
+            
+            <div class="macro-grid">
+                <div class="macro-item">
+                    <div class="label">Protein</div>
+                    <div class="bar-bg"><div class="bar-fill protein" style="width: 0%;"></div></div>
+                    <div class="value">0g</div>
+                </div>
+                <div class="macro-item">
+                    <div class="label">Carbs</div>
+                    <div class="bar-bg"><div class="bar-fill carbs" style="width: 0%;"></div></div>
+                    <div class="value">0g</div>
+                </div>
+                <div class="macro-item">
+                    <div class="label">Fats</div>
+                    <div class="bar-bg"><div class="bar-fill fats" style="width: 0%;"></div></div>
+                    <div class="value">0g</div>
+                </div>
+            </div>
+            <button class="btn-add">+ Add to Daily Log</button>
+        </div>
+    </section>
+
+    <section class="history-section">
+        <h3>Search History</h3>
+        <div id="historyList" class="history-list"></div>
+    </section>
+
+    <section class="categories">
+        <h3>Common Categories</h3>
+        <div class="card-container">
+            <div class="card">🍎 <span>Fruits</span></div>
+            <div class="card">🥦 <span>Veggie</span></div>
+            <div class="card">🍗 <span>Proteins</span></div>
+            <div class="card">🥐 <span>Bakery</span></div>
+        </div>
+    </section>
+
+    <script src="home.js"></script>
+</body>
+</html>
